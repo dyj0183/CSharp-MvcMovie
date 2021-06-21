@@ -25,36 +25,27 @@ namespace MvcMovie.Models
                     {
                         Title = "The R.M.",
                         ReleaseDate = DateTime.Parse("2003-1-31"),
-                        Genre = "Religious",
-                        Rating = "PG-13",
+                        Genre = "Comedy",
+                        Rating = "PG",
                         Price = 7.99M
                     },
 
                     new Movie
                     {
-                        Title = "Ghostbusters ",
-                        ReleaseDate = DateTime.Parse("1984-3-13"),
-                        Genre = "Comedy",
-                        Rating = "R",
+                        Title = "The Other Side of Heaven",
+                        ReleaseDate = DateTime.Parse("2001-12-14"),
+                        Genre = "Adventure",
+                        Rating = "PG",
                         Price = 8.99M
                     },
 
                     new Movie
                     {
-                        Title = "Ghostbusters 2",
-                        ReleaseDate = DateTime.Parse("1986-2-23"),
-                        Genre = "Comedy",
-                        Rating = "R",
+                        Title = "Meet the Mormons",
+                        ReleaseDate = DateTime.Parse("2014-10-10"),
+                        Genre = "Documentary",
+                        Rating = "PG",
                         Price = 9.99M
-                    },
-
-                    new Movie
-                    {
-                        Title = "Rio Bravo",
-                        ReleaseDate = DateTime.Parse("1959-4-15"),
-                        Genre = "Western",
-                        Rating = "R",
-                        Price = 3.99M
                     }
                 );
                 context.SaveChanges();
