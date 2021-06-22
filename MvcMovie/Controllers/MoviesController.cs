@@ -75,6 +75,11 @@ namespace MvcMovie.Controllers
         // GET: Movies/Create
         public IActionResult Create()
         {
+            // create a List for Genre's dropdown list
+            string[] genres = { "Comedy", "Action", "Drama", "Documentary", "Adventure", "Romance" };
+            var Genres = new SelectList(genres);
+            ViewData["Genres"] = Genres;
+
             return View();
         }
 
@@ -107,6 +112,12 @@ namespace MvcMovie.Controllers
             {
                 return NotFound();
             }
+
+            // create a List for Genre's dropdown list
+            string[] genres = { "Comedy", "Action", "Drama", "Documentary", "Adventure", "Romance" };
+            var Genres = new SelectList(genres);
+            ViewData["Genres"] = Genres;
+
             return View(movie);
         }
 
