@@ -35,5 +35,8 @@ namespace MvcMovie.Models
         [StringLength(5)]
         [Required]
         public string Rating { get; set; }
+
+        [DataType(DataType.ImageUrl)]
+        public string imageUrl { get; set; }
     }
 }

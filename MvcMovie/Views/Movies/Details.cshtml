@@ -40,9 +40,15 @@
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Rating)
         </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.imageUrl)
+        </dt>
+        <dd class="col-sm-10">
+            <img class="figure-img" src="@Url.Content(Model.imageUrl)" />
+        </dd>
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-success">Edit</a> |
+    <a asp-action="Index" class="btn btn-primary">Back to List</a>
 </div>

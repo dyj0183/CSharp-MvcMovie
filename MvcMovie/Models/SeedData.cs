@@ -27,7 +27,8 @@ namespace MvcMovie.Models
                         ReleaseDate = DateTime.Parse("2003-1-31"),
                         Genre = "Comedy",
                         Rating = "PG",
-                        Price = 7.99M
+                        Price = 7.99M,
+                        imageUrl = "~/images/RM.jpg"
                     },
 
                     new Movie
@@ -36,7 +37,8 @@ namespace MvcMovie.Models
                         ReleaseDate = DateTime.Parse("2001-12-14"),
                         Genre = "Adventure",
                         Rating = "PG",
-                        Price = 8.99M
+                        Price = 8.99M,
+                        imageUrl = "~/images/OtherSideOfHeaven.jpg"
                     },
 
                     new Movie
@@ -45,7 +47,8 @@ namespace MvcMovie.Models
                         ReleaseDate = DateTime.Parse("2014-10-10"),
                         Genre = "Documentary",
                         Rating = "PG",
-                        Price = 9.99M
+                        Price = 9.99M,
+                        imageUrl = "~/images/MeetMormons.jpg"
                     }
                 );
                 context.SaveChanges();
